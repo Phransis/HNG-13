@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
     # apps
     'task1',
+    'analyzer',
 ]
 
 MIDDLEWARE = [

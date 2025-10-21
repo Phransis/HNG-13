@@ -22,18 +22,30 @@
 5. Run server locally:
    python manage.py runserver 0.0.0.0:8000
 
-6. Access at http://hng-13-production.up.railway.app/me
+6. Access at http://hng-13-production.up.railway.app/
 
 7. Test the endpoint:
-   curl -i http://127.0.0.1:8000/me
+   curl -i http://127.0.0.1:8000/
 
    Expected JSON shape:
-   {
-     "status": "success",
-     "user": { "email": "...", "name": "...", "stack": "..." },
-     "timestamp": "2025-10-15T12:34:56.789Z",
-     "fact": "A random cat fact..."
-   }
+{
+    "id": "79cb79153c08657ed66fe366e7e92fef8dcbc8be1a2e91f7cace938d61dc4b96",
+    "value": "Hannah",
+    "properties": {
+        "length": 6,
+        "is_palindrome": true,
+        "unique_characters": 4,
+        "word_count": 1,
+        "sha256_hash": "79cb79153c08657ed66fe366e7e92fef8dcbc8be1a2e91f7cace938d61dc4b96",
+        "character_frequency_map": {
+            "H": 1,
+            "a": 2,
+            "n": 2,
+            "h": 1
+        }
+    },
+    "created_at": "2025-10-21T21:37:24.771Z"
+}
 
 ## Run tests
    python manage.py test
