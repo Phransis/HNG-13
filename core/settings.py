@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     # apps
     'task1',
     'analyzer',
+    'countries',
 ]
 
 MIDDLEWARE = [
