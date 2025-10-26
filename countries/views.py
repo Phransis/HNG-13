@@ -162,7 +162,7 @@ def get_country(request, name):
 		return JsonResponse({"error": "Country not found"}, status=404)
 
 
-
+@csrf_exempt
 def delete_country(request, name):
 	try:
 		c = Country.objects.get(name__iexact=name)
